@@ -1,0 +1,488 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Орловский Олег — ИТ-менеджер</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <!-- Навигация -->
+    <nav class="navbar">
+        <div class="container nav-container">
+            <a href="#" class="logo">О.О.</a>
+            <ul class="nav-links">
+                <li><a href="#about">Обо мне</a></li>
+                <li><a href="#experience">Опыт</a></li>
+                <li><a href="#education">Образование</a></li>
+                <li><a href="#courses">Курсы</a></li>
+                <li><a href="#skills">Навыки</a></li>
+                <li><a href="#ai-projects">AI-проекты</a></li>
+                <li><a href="#infra">Инфраструктура</a></li>
+                <li><a href="#contacts" class="nav-cta">Контакты</a></li>
+            </ul>
+            <button class="burger" aria-label="Меню">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero" id="home">
+        <div class="container hero-container">
+            <div class="hero-photo fade-in">
+                <img src="img/photo.jpeg" alt="Олег Орловский">
+            </div>
+            <div class="hero-content fade-in">
+                <p class="greeting">Привет, я</p>
+                <h1 class="name">Олег Орловский</h1>
+                <p class="title">ИТ-менеджер</p>
+                <div class="hero-contacts">
+                    <a href="mailto:philadelfic@gmail.com" class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.3a1.95 1.95 0 0 1-2.06 0L2 7"/></svg>
+                        philadelfic@gmail.com
+                    </a>
+                    <a href="tel:+79998458576" class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                        +7 (999) 8458576
+                    </a>
+                    <a href="https://t.me/@philadelfic" class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 3l-7 20-4.5-8L3 16l21-13z"/></svg>
+                    <span>Telegramm</span>
+                </a>
+                    <span class="contact-item">
+                        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
+                        Москва, Россия
+                    </span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Обо мне -->
+    <section class="about section" id="about">
+        <div class="container">
+            <h2 class="section-title fade-in">Обо мне</h2>
+            <div class="about-content fade-in">
+                <p>ИТ-менеджер с общим опытом работы 8+ лет, из которых 4 года в IT. Специализируюсь на управлении командами разработки, ведении проектов (новых систем и сервисов), системном анализе и импортозамещении.</p>
+                <p>Текущие проекты — вывод новых кадровых сервисов банка ВТБ и первод существующих на отечественный стек (PostgreSQL, Astra Linux, Kubernetes). Управляю командой из 16+ человек: архитекторы, системные аналитики, разработчики, тестировщики и DevOps. Внедрил релизную политику, менторю новых специалистов и веду проекты.</p>
+                <p>Изучаю инновационные технологии (и тестирую на собсвенной домашней инфраструктуре из 5 серверов) и научные открытия, смежные с ИТ. Осваиваю программирование: WEB-dev (HTML/CSS/REACT), Python, JavaScript.</p>
+                <p>Защитил магистерскую диссертацию на тему «Социально-экономические последствия развития Цифровой экономики», рекомендован к аспирантуре.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label">лет общего опыта</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label">года в ИТ</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">16+</span>
+                        <span class="stat-label">человек в команде</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    <!-- Опыт работы -->
+    <section class="experience section" id="experience">
+        <div class="container">
+            <h2 class="section-title fade-in">Опыт работы</h2>
+            <div class="timeline">
+
+                <!-- ИННОТЕХ / ВТБ -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>ИТ-лидер</h3>
+                            <span class="timeline-date">Июль 2023 — настоящее время</span>
+                        </div>
+                        <p class="company">ООО "ГК ИННОТЕХ" (совместительство в ПАО Банк ВТБ) · Москва</p>
+                        <p class="card-subtitle">Подразделение: Центр разработки ERP, Дивизион технологического развития внутренних процессов и платформы данных.</p>
+                        <ul>
+                            <li>Системный аналитик в системе аутентификации пользователей</li>
+                            <li>ИТ-лидер системы импортозамещения кадровых сервисов (переход с FIORI/OData → REST/Kafka, Ubuntu/RHEL/CentOS → Astra Linux (включая базовый образ))</li>
+                            <li>Управление командой из 16+ человек: архитекторы (2), СА (4), разработчики (4), тестировщики (3), DevOps (2), scrum-мастер + подрядчики</li>
+                            <li>Планирование спринтов и суперспринтов (включая работы со смежными командами), корректировка бэклога, эскалации</li>
+                            <li>Менторство всех новых сотрудников в команде</li>
+                            <li>соблюдение 152 ФЗ и внутренних нормативных актов</li>
+                        </ul>
+                        <div class="achievements">
+                            <p><strong>Достижения:</strong></p>
+                            <ul>
+                                <li>Вывел ~65 сервисов во внутренний портал сотрудника, 9 сервисов в мобильное приложение за 2.5 года (10 тыс. уникальных пользователей/день на портале, 2 тыс. через мобильное приложение), в месяц — 70 тыс. уникальных пользователей</li>
+                                <li>Успешно реализовал импортозамещение кадровых сервисов на отечественный стек (OData → REST/Kafka, Ubuntu/CentOS/RHEL → Астра Линукс)</li>
+                                <li>Ввёл релизную политику — прозрачность интеграций и плановое развитие, легкость интеграции с другими системами</li>
+                                <li>Реализовал 5 новых сложных кадровых сервисов (интеграции с 9 системами)</li>
+                                <li>Внедрил opensource WiKi (Docmost) для разработки, с MCP для подключения к локальным Ai-агентам и харнесам.</li>
+                                <li>Внедрение бизнес-метрик (mao/wao/dao)</li>
+                                <li>Менторинг команды по AI-инфраструктуре (ollama/vllm, mcp (docmost/nocodb), openwebui (скилы, подключение тулов/mcp/rag), LLM/VLM, автоматизации (N8N, activepieces))</li>
+                                <li>Внедрение видео-инструкций для сложных сервисов</li>
+                            </ul>
+                            <p><strong>ТехСтек:</strong></p>
+                            <ul>
+                                <a>PostgreSQL, Postman, Redis, Kafka, Tarantool, RabbitMQ | Astra Linux, Kubernetes, Docker | Spring Boot (Java) | Сфера:  Code, CI/CD, тестирование, автотесты, релизы, документы, знания (WiKi), планирование мощности, прочие инструменты Сфера | Ollama/VLLM/Llama/cpp, LLM/VLM/embedding, RAG, N8N/ActivePieces | DrawIO/Mermaid/Excalidraw/PlanUML</a>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- БизнесАвтоматика -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Технический писатель</h3>
+                            <span class="timeline-date">Октябрь 2022 — Март 2023 (6 мес.)</span>
+                        </div>
+                        <p class="company">НПЦ "БизнесАвтоматика" · Москва, pba.su</p>
+                        <ul>
+                            <li>Разработка и редактирование проектной документации по ГОСТ 34, ГОСТ 19, ГОСТ 7, ГОСТ 2</li>
+                            <li>Техническая графика: UML, BPMN, IDEF0 в Draw.io, MS Visio, LibreOffice Drawing</li>
+                            <li>Сбор и анализ научно-технической информации (Excel, PowerPoint, Visary BI, Tableau Public)</li>
+                            <li>Управление задачами команд через GitLab</li>
+                            <li>Проверка реализации БД на соответствие ТЗ/ПЗ/ПМИ</li>
+                        </ul>
+                        <div class="achievements">
+                            <p><strong>Достижения:</strong></p>
+                            <ul>
+                                <li>Разработал сложное ТЗ на автоматизированную систему в сжатые сроки (актуализация 2 предыдущих работ)</li>
+                                <li>Подготовил Пояснительную записку технического проекта (3 апдейта системы в одной ПЗ)</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Префектура САО -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Ведущий специалист / Контролер</h3>
+                            <span class="timeline-date">Март 2022 — Октябрь 2022 (8 мес.)</span>
+                        </div>
+                        <p class="company">Префектура САО г. Москвы · Москва, sao.mos.ru</p>
+                        <ul>
+                            <li>Экономические/финансовые проверки подведомственных учреждений и внутренний аудит</li>
+                            <li>Проверка формирования Государственного задания, субсидий, Плана ФХД (1С, ЕАИСТ, ЕИС)</li>
+                            <li>Написание отчётов о финансовых и кадровых проверках</li>
+                        </ul>
+                        <div class="achievements">
+                            <p><strong>Достижения:</strong></p>
+                            <ul>
+                                <li>Оптимизация структурных и подведомственных учреждений</li>
+                                <li>Внедрение YouGile для учёта задач и нарушений</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ЦСПС -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Ведущий специалист / Куратор</h3>
+                            <span class="timeline-date">Август 2020 — Февраль 2022 (1 год 7 мес.)</span>
+                        </div>
+                        <p class="company">ФГБУ «Центр спортивной подготовки сборных команд России» · Москва, sport-teams.ru</p>
+                        <ul>
+                            <li>Работа с Министерством спорта по развитию спорта слепых и ЛИН</li>
+                            <li>Утверждение списков сборных команд России, мониторинг мероприятий</li>
+                            <li>Командирование на международные соревнования</li>
+                        </ul>
+                        <div class="achievements">
+                            <p><strong>Достижения:</strong></p>
+                            <ul>
+                                <li>Участие в Паралимпиаде Токио 2020 (завоевание квот, подготовка, документальное сопровождение)</li>
+                                <li>Введение системы учёта задач (Trello → YouGile)</li>
+                                <li>Исправление недочётов законодательства в сфере спорта инвалидов</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ВООС -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Главный специалист</h3>
+                            <span class="timeline-date">Август 2019 — Июнь 2020 (11 мес.)</span>
+                        </div>
+                        <p class="company">ВСЕРОССИЙСКОЕ ОБЩЕСТВО СЛЕПЫХ · Москва, www.vos.org.ru</p>
+                        <ul>
+                            <li>Работа с иностранными коллегами в правовой области жизнедеятельности лиц с нарушением зрения</li>
+                            <li>Переводы и отчётность в международной деятельности</li>
+                            <li>Анализ инклюзивности в общественную жизнь</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- МАЦ -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Специалист</h3>
+                            <span class="timeline-date">Декабрь 2018 — Июль 2019 (8 мес.)</span>
+                        </div>
+                        <p class="company">Московский аналитический центр в сфере городского хозяйства · Москва, www.gbumac.ru</p>
+                        <ul>
+                            <li>Проведение экономических проверок ГБУ «Жилищник» г. Москвы</li>
+                            <li>Разработка шаблонов финансовых проверок и алгоритмов расчётов</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- RENAULT RUS -->
+                <div class="timeline-item fade-in">
+                    <div class="timeline-marker"></div>
+                    <div class="timeline-content">
+                        <div class="timeline-header">
+                            <h3>Стажёр</h3>
+                            <span class="timeline-date">Ноябрь 2016 — Февраль 2017 (4 мес.)</span>
+                        </div>
+                        <p class="company">RENAULT RUS · Москва, www.renault.ru</p>
+                        <ul>
+                            <li>Поиск и обработка информации для руководства, переводы документов</li>
+                            <li>Анализ и мониторинг промышленности, работа с госорганами</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Образование -->
+    <section class="education section" id="education">
+        <div class="container">
+            <h2 class="section-title fade-in">Образование</h2>
+            <div class="cards-grid">
+                <div class="card fade-in">
+                    <div class="card-icon">🎓</div>
+                    <h3>Магистр — Международные отношения, Мировая экономика и управление</h3>
+                    <p class="card-subtitle">2018 / 2016</p>
+                    <p class="card-body">Московский государственный университет им. М.В. Ломоносова (МГУ)</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Курсы и повышение квалификации -->
+    <section class="courses section" id="courses">
+        <div class="container">
+            <h2 class="section-title fade-in">Курсы и повышение квалификации</h2>
+            <div class="cards-grid">
+
+                <div class="card fade-in">
+                    <div class="card-icon">📜</div>
+                    <h3>Инновационные технологии адаптивной ФК</h3>
+                    <p class="card-subtitle">2021</p>
+                    <p class="card-body">ГАОУ ВО МГУСиТ</p>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">📜</div>
+                    <h3>Федеральные стандарты бухгалтерского учёта</h3>
+                    <p class="card-subtitle">2019</p>
+                    <p class="card-body">ООО "Финансовый приоритет"</p>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">📜</div>
+                    <h3>Ведомственный контроль финансово-хозяйственной деятельности</h3>
+                    <p class="card-subtitle">2019</p>
+                    <p class="card-body">МГУУ Правительства Москвы</p>
+                </div>
+
+                <div class="card fade-in">
+                    <div class="card-icon">📜</div>
+                    <h3>Диалог и партнерство Цивилизаций</h3>
+                    <p class="card-subtitle">2016</p>
+                    <p class="card-body">Международный институт Питирима Сорокина</p>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Навыки -->
+    <section class="skills section" id="skills">
+        <div class="container">
+            <h2 class="section-title fade-in">Навыки</h2>
+            <div class="skills-grid">
+
+                <div class="skill-category fade-in">
+                    <h3>СУБД и брокеры</h3>
+                    <div class="tags">
+                        <span class="tag">PostgreSQL</span>
+                        <span class="tag">Redis</span>
+                        <span class="tag">Kafka</span>
+                        <span class="tag">Tarantool</span>
+                        <span class="tag">RabbitMQ</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Инфраструктура и DevOps</h3>
+                    <div class="tags">
+                        <span class="tag">Kubernetes</span>
+                        <span class="tag">Docker</span>
+                        <span class="tag">Astra Linux</span>
+                        <span class="tag">Ubuntu</span>
+                        <span class="tag">CentOS/RHEL</span>
+                        <span class="tag">GitLab CI/CD</span>
+                        <span class="tag">Сфера CI/CD</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>AI / ML стек</h3>
+                    <div class="tags">
+                        <span class="tag">Open WebUI</span>
+                        <span class="tag">Ollama/Vllm/Llama.cpp</span>
+                        <span class="tag">Kokoro (TTS)</span>
+                        <span class="tag">Hermes/Odysseus/OpenClaw AI Agent</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Аналитика и документация</h3>
+                    <div class="tags">
+                        <span class="tag">UML</span>
+                        <span class="tag">BPMN</span>
+                        <span class="tag">IDEF0</span>
+                        <span class="tag">ГОСТ 16/34</span>
+                        <span class="tag">REST API</span>
+                        <span class="tag">Markdown</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Управление и процессы</h3>
+                    <div class="tags">
+                        <span class="tag">Scrum / Agile</span>
+                        <span class="tag">Планирование спринтов</span>
+                        <span class="tag">Релизная политика</span>
+                        <span class="tag">Менторство</span>
+                        <span class="tag">Эскалирование</span>
+                    </div>
+                </div>
+
+                <div class="skill-category fade-in">
+                    <h3>Языки общения</h3>
+                    <div class="tags">
+                        <span class="tag">Русский — родной</span>
+                        <span class="tag">English — C1 (Advanced)</span>
+                        <span class="tag">Français — A2</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Инфраструктура -->
+    <section class="infra section" id="infra">
+        <div class="container">
+            <h2 class="section-title fade-in">Инфраструктура</h2>
+            <div class="infra-grid">
+                
+                <div class="infra-category fade-in">
+                    <h3>🖥️ Сервер (Docker)</h3>
+                    <ul>
+                        <li><strong>Ollama</strong> — локальные LLM/VLM</li>
+                        <li><strong>Kokoro</strong> — текст-в-речь (TTS)</li>
+                        <li><strong>Open WebUI</strong> + <strong>Open Terminal</strong></li>
+                        <li><strong>Grafana</strong> + <strong>Beszel</strong> — мониторинг</li>
+                        <li><strong>Portainer</strong> — управление Docker</li>
+                    </ul>
+                </div>
+
+                <div class="infra-category fade-in">
+                    <h3>📚 Продуктивность</h3>
+                    <ul>
+                        <li><strong>Docmost</strong> + Meilisearch — wiki и поиск</li>
+                        <li><strong>NocoDB/PostgreSQL</strong> — базы данных</li>
+                        <li><strong>Blinko</strong> — закладки</li>
+                        <li><strong>Docmost</strong> — заметки</li>
+                        <li><strong>Memos</strong> — заметки</li>
+                        <li><strong>SearXNG</strong> — метапоисковик</li>
+                        <li><strong>Bookstack</strong> — документация</li>
+                    </ul>
+                </div>
+
+                <div class="infra-category fade-in">
+                    <h3>🛠️ Разработка</h3>
+                    <ul>
+                        <li><strong>OpenProject</strong> + <strong>PlantUML</strong></li>
+                        <li><strong>CloudBeaver</strong> — СУБД через веб</li>
+                        <li><strong>Draw.io</strong> + <strong>Excalidraw</strong> — визуальное проектирование</li>
+                        <li><strong>n8n</strong> — автоматизация workflow</li>
+                    </ul>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Дополнительная информация -->
+    <section class="additional section" id="additional">
+        <div class="container">
+            <h2 class="section-title fade-in">Дополнительная информация</h2>
+            <div class="about-content fade-in">
+                <ul>
+                    <li>Стажировка в <strong>РОСКОСМОСЕ</strong> (2014, 2015) — помощник экономиста</li>
+                    <li>Кружок математического моделирования в университете</li>
+                    <li>Участие в организации международных конференций «Глобалистика» (2014–2017)</li>
+                    <li>Разработка законопроектов внедрения каршеринга в РФ (Renault Russia, 2016)</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Контакты -->
+    <section class="contacts section" id="contacts">
+        <div class="container">
+            <h2 class="section-title fade-in">Контакты</h2>
+            <div class="contacts-grid fade-in">
+                <a href="mailto:philadelfic@gmail.com" class="contact-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-8.97 5.3a1.95 1.95 0 0 1-2.06 0L2 7"/></svg>
+                    <span>Email</span>
+                </a>
+                <a href="tel:+79998458576" class="contact-card">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6A19.79 19.79 0 0 1 2.12 4.11 2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+                    <span>Телефон</span>
+                </a>
+                <a href="https://t.me/@philadelfic" class="contact-card">
+                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 3l-7 20-4.5-8L3 16l21-13z"/></svg>
+                    <span>Telegramm</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Орловский Олег. ИТ-менеджер.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+</body>
+</html>
