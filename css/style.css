@@ -621,6 +621,7 @@ a:hover {
 .download-float:hover {
     transform: scale(1.05);
     box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+    color: #fff;
 }
 
 /* ===== Адаптив === */
