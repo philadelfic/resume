@@ -596,6 +596,36 @@ a:hover {
     color: var(--text-primary);
 }
 
+/* ===== Плавающая кнопка скачивания === */
+.download-float {
+    position: fixed;
+    bottom: 28px;
+    right: 28px;
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+    background: var(--primary);
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 14px rgba(37, 99, 235, 0.4);
+    cursor: pointer;
+    z-index: 999;
+    transition: transform var(--transition), box-shadow var(--transition);
+    border: none;
+}
+
+.download-float:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(37, 99, 235, 0.5);
+}
+
+.download-float svg {
+    width: 24px;
+    height: 24px;
+}
+
 /* ===== Адаптив === */
 @media (max-width: 768px) {
     .nav-links {
