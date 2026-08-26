@@ -15,6 +15,12 @@
 
     --border: #e2e8f0;
 
+    --nav-bg: rgba(255,255,255,0.92);
+    --accent-bg: #eff6ff;
+    --photo-border: #ffffff;
+    --marker-border: #ffffff;
+    --hero-gradient: linear-gradient(135deg, #f8fafc 0%, #eff6ff 100%);
+
     --shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
     --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
     --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.05);
@@ -24,6 +30,34 @@
     --radius-lg: 16px;
 
     --transition: 0.3s ease;
+}
+
+/* ===== Тёмная тема === */
+[data-theme="dark"] {
+    --primary: #3b82f6;
+    --primary-light: #60a5fa;
+    --primary-dark: #2563eb;
+    --accent: #38bdf8;
+
+    --bg-primary: #0f172a;
+    --bg-secondary: #1e293b;
+    --bg-tertiary: #334155;
+
+    --text-primary: #f1f5f9;
+    --text-secondary: #cbd5e1;
+    --text-muted: #94a3b8;
+
+    --border: #334155;
+
+    --nav-bg: rgba(15,23,42,0.9);
+    --accent-bg: rgba(59,130,246,0.16);
+    --photo-border: #1e293b;
+    --marker-border: #0f172a;
+    --hero-gradient: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+
+    --shadow-sm: 0 1px 2px rgba(0,0,0,0.4);
+    --shadow-md: 0 4px 6px -1px rgba(0,0,0,0.5), 0 2px 4px -2px rgba(0,0,0,0.4);
+    --shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.5), 0 4px 6px -4px rgba(0,0,0,0.4);
 }
 
 /* ===== Сброс === */
@@ -69,9 +103,39 @@ a:hover {
     left: 0;
     right: 0;
     z-index: 1000;
-    background: rgba(255,255,255,0.92);
+    background: var(--nav-bg);
     backdrop-filter: blur(12px);
     border-bottom: 1px solid var(--border);
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.icon-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 38px;
+    height: 34px;
+    padding: 0 10px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    font-family: inherit;
+    color: var(--text-secondary);
+    background: transparent;
+    border: 1px solid var(--border);
+    border-radius: var(--radius-sm);
+    cursor: pointer;
+    transition: color var(--transition), border-color var(--transition), background var(--transition);
+}
+
+.icon-btn:hover {
+    color: var(--primary);
+    border-color: var(--primary-light);
+    background: var(--accent-bg);
 }
 
 .nav-container {
@@ -90,6 +154,8 @@ a:hover {
 .nav-links {
     display: flex;
     align-items: center;
+    justify-content: center;
+    flex: 1;
     gap: 32px;
     list-style: none;
 }
@@ -141,7 +207,7 @@ a:hover {
     display: flex;
     align-items: center;
     padding-top: 64px;
-    background: linear-gradient(135deg, var(--bg-secondary) 0%, #eff6ff 100%);
+    background: var(--hero-gradient);
 }
 
 .hero-container {
@@ -160,7 +226,7 @@ a:hover {
     object-fit: cover;
     border-radius: 50%;
     box-shadow: var(--shadow-lg);
-    border: 4px solid #fff;
+    border: 4px solid var(--photo-border);
 }
 
 .hero-content {
@@ -280,7 +346,7 @@ a:hover {
     height: 18px;
     border-radius: 50%;
     background: var(--primary);
-    border: 3px solid #fff;
+    border: 3px solid var(--marker-border);
     box-shadow: 0 0 0 2px var(--primary);
     flex-shrink: 0;
     margin-top: 4px;
@@ -438,7 +504,7 @@ a:hover {
 }
 
 .tag:hover {
-    background: #eff6ff;
+    background: var(--accent-bg);
     border-color: var(--primary-light);
     color: var(--primary);
 }
@@ -465,7 +531,7 @@ a:hover {
 }
 
 .contact-card:hover {
-    background: #eff6ff;
+    background: var(--accent-bg);
     border-color: var(--primary-light);
     transform: translateY(-2px);
     box-shadow: var(--shadow-md);
@@ -632,7 +698,7 @@ a:hover {
         top: 64px;
         left: 0;
         right: 0;
-        background: #fff;
+        background: var(--bg-primary);
         flex-direction: column;
         padding: 24px;
         gap: 16px;
@@ -646,6 +712,7 @@ a:hover {
 
     .burger {
         display: flex;
+        margin-left: 8px;
     }
 
     .hero-contacts {
