@@ -139,10 +139,6 @@ const TRANSLATIONS = {
         'proj.link': 'Открыть репозиторий →',
         'proj1.name': 'LLM Second Brain',
         'proj1.desc': 'Self-hosted MCP-сервер долговременной памяти для LLM: хранит, суммаризирует и ищет заметки через векторизацию (Ollama).',
-        'proj2.name': 'WebDev Portfolio',
-        'proj2.desc': 'Портфолио веб-разработчика: HTML/CSS/JavaScript проекты.',
-        'proj3.name': 'Resume',
-        'proj3.desc': 'Этот сайт-резюме, размещённый на GitHub Pages.',
 
         'add.title': 'Дополнительная информация',
         'add.li1': 'Стажировка в <strong>РОСКОСМОСЕ</strong> (2014, 2015) — помощник экономиста',
@@ -301,10 +297,6 @@ const TRANSLATIONS = {
         'proj.link': 'Open repository →',
         'proj1.name': 'LLM Second Brain',
         'proj1.desc': 'Self-hosted MCP server for long-term memory: stores, summarizes and searches notes via vectorization (Ollama).',
-        'proj2.name': 'WebDev Portfolio',
-        'proj2.desc': 'Web developer portfolio: HTML/CSS/JavaScript projects.',
-        'proj3.name': 'Resume',
-        'proj3.desc': 'This resume website, hosted on GitHub Pages.',
 
         'add.title': 'Additional information',
         'add.li1': 'Internship at <strong>ROSCOSMOS</strong> (2014, 2015) — economist assistant',
