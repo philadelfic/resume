@@ -1,12 +1,12 @@
 // ===== Переводы (RU/EN) =====
 const TRANSLATIONS = {
     ru: {
+        'meta.title': 'Орловский Олег — ИТ-лидер команды разработки',
         'nav.about': 'Обо мне',
         'nav.experience': 'Опыт',
         'nav.education': 'Образование',
         'nav.skills': 'Навыки',
         'nav.projects': 'Проекты',
-        'nav.infra': 'Инфраструктура',
         'nav.contacts': 'Контакты',
 
         'hero.greeting': 'Привет, я',
@@ -16,7 +16,7 @@ const TRANSLATIONS = {
         'contact.location': 'Москва, Россия',
 
         'about.title': 'Обо мне',
-        'about.p1': 'ИТ-менеджер с общим опытом работы 8+ лет, из которых 4 года в IT. Специализируюсь на управлении командами разработки, ведении проектов (новых систем и сервисов), системном анализе, импортозамещении и внедрении AI-инструментов.',
+        'about.p1': 'ИТ-лидер команды разработки с общим опытом работы 8+ лет, из которых 4 года в IT. Специализируюсь на управлении командами разработки, ведении проектов (новых систем и сервисов), системном анализе, импортозамещении и внедрении AI-инструментов.',
         'about.p2': 'Текущие проекты — вывод новых кадровых сервисов банка ВТБ и перевод существующих на отечественный стек (PostgreSQL, Astra Linux, Kubernetes). Управляю командой из 16+ человек: архитекторы, системные аналитики, разработчики, тестировщики и DevOps. Внедрил релизную политику, менторю новых специалистов и веду проекты.',
         'about.p3': 'Изучаю инновационные технологии (и тестирую на собственной домашней инфраструктуре из 5 серверов) и научные открытия, смежные с ИТ. Разбираюсь в чужом коде: читаю, правлю неточности и дорабатываю — WEB-dev (HTML/CSS/REACT), Python, JavaScript. Использую Python и JavaScript для автоматизации личных рабочих процессов: скрипты интеграции с LLM API, обработка данных для AI-пайплайнов. Практический опыт написания кода для MVP AI-инструментов.',
         'about.p4': 'Защитил магистерскую диссертацию на тему «Социально-экономические последствия развития Цифровой экономики», рекомендован к аспирантуре.',
@@ -39,7 +39,7 @@ const TRANSLATIONS = {
         'exp1.li3': 'Управление командой из 16+ человек: архитекторы (2), СА (4), разработчики (4), тестировщики (3), DevOps (2), scrum-мастер + подрядчики',
         'exp1.li4': 'Планирование спринтов и суперспринтов (включая работы со смежными командами), корректировка бэклога, эскалации',
         'exp1.li5': 'Менторство всех новых сотрудников в команде',
-        'exp1.li6': 'соблюдение 152 ФЗ и внутренних нормативных актов',
+        'exp1.li6': 'Соблюдение 152 ФЗ и внутренних нормативных актов',
         'exp1.achTitle': '<strong>Достижения:</strong>',
         'exp1.ach1': 'Масштабирование и импортозамещение: вывел на внутренний портал ~65 HR-сервисов (9 — в мобильное приложение), пользователей до 10 тыс./день. Перешёл с FIORI/OData на REST/Kafka, мигрировал на Astra Linux, развил микросервисную архитектуру. Снизил объём ручных обращений и подготовил платформу к AI-внедрениям',
         'exp1.ach2': 'Сложные интеграции: реализовал 5 HR-сервисов с подключением к 9 внутренним системам, автоматизировал кадровые процессы, повысил долю самообслуживания сотрудников',
@@ -114,31 +114,26 @@ const TRANSLATIONS = {
         'skill.lang.en': 'English — C1 (Advanced)',
         'skill.lang.fr': 'Français — A2',
 
-        'infra.title': 'Инфраструктура',
-        'infra.cat1': '🖥️ Сервер (Docker)',
-        'infra.cat1.li1': '<strong>Ollama</strong> — локальные LLM/VLM',
-        'infra.cat1.li2': '<strong>Kokoro</strong> — текст-в-речь (TTS)',
-        'infra.cat1.li3': '<strong>Open WebUI</strong> + <strong>Open Terminal</strong>',
-        'infra.cat1.li4': '<strong>Grafana</strong> + <strong>Beszel</strong> — мониторинг',
-        'infra.cat1.li5': '<strong>Portainer</strong> — управление Docker',
-        'infra.cat2': '📚 Продуктивность',
-        'infra.cat2.li1': '<strong>Docmost</strong> + Meilisearch — wiki и поиск',
-        'infra.cat2.li2': '<strong>NocoDB/PostgreSQL</strong> — базы данных',
-        'infra.cat2.li3': '<strong>Blinko</strong> — закладки',
-        'infra.cat2.li4': '<strong>Docmost</strong> — заметки',
-        'infra.cat2.li5': '<strong>Memos</strong> — заметки',
-        'infra.cat2.li6': '<strong>SearXNG</strong> — метапоисковик',
-        'infra.cat2.li7': '<strong>Bookstack</strong> — документация',
-        'infra.cat3': '🛠️ Разработка',
-        'infra.cat3.li1': '<strong>OpenProject</strong> + <strong>PlantUML</strong>',
-        'infra.cat3.li2': '<strong>CloudBeaver</strong> — СУБД через веб',
-        'infra.cat3.li3': '<strong>Draw.io</strong> + <strong>Excalidraw</strong> — визуальное проектирование',
-        'infra.cat3.li4': '<strong>n8n</strong> — автоматизация workflow',
-
-        'projects.title': 'Проекты (GitHub)',
+        'projects.title': 'Проекты',
         'proj.link': 'Открыть репозиторий →',
         'proj1.name': 'LLM Second Brain',
-        'proj1.desc': 'Self-hosted MCP-сервер долговременной памяти для LLM: хранит, суммаризирует и ищет заметки через векторизацию (Ollama).',
+        'proj1.desc': 'Self-hosted MCP-сервер «второго мозга» для LLM: даёт моделям (Open WebUI и др.) общий банк заметок с гибридным поиском — векторным и полнотекстовым. Знания живут отдельно от истории чатов, модель получает только релевантное.',
+        'proj1.r1': '🧠 <strong>Общий банк знаний</strong> для LLM — модели ищут, читают, пишут и обновляют заметки через MCP',
+        'proj1.r2': '🔍 <strong>Гибридный поиск</strong> — векторный (sqlite-vec) + полнотекстовый (FTS5), слияние через RRF',
+        'proj1.r3': '💰 <strong>Экономия токенов</strong> — выдача кратких содержаний, а не целых текстов',
+        'proj1.r4': '🛡️ <strong>Self-hosted</strong> — один Docker-контейнер, non-root, данные не покидают контур',
+        'proj1.r5': '🧩 <strong>6 инструментов</strong> memory_*: search, list, get, save, update, delete',
+        'proj1.stack': '<strong>Стек:</strong> Python 3.12, FastAPI, SQLite + sqlite-vec + FTS5, Ollama (векторизация/суммаризация), MCP Streamable HTTP, Docker',
+        'proj2.name': 'Домашний homelab — self-hosted AI-инфраструктура',
+        'proj2.desc': 'Собрал и поддерживаю собственный homelab из 5 серверов — self-hosted AI-инфраструктуру для изучения и тестирования технологий: локальные LLM, автоматизация, мониторинг и продуктивность. Всё работает в Docker, данные не покидают контур.',
+        'proj2.r1': '🖥️ <strong>5 серверов</strong>, всё в Docker, единая точка управления (Portainer)',
+        'proj2.r2': '🤖 <strong>Локальные LLM</strong> (Ollama/vLLM) — данные не покидают контур, приватность',
+        'proj2.r3': '⚙️ <strong>Автоматизация</strong> — рядовых и рутинных процессов с помощью N8N, автоматизаций Open WebUI и собственными скриптами',
+        'proj2.r4': '📊 <strong>Мониторинг</strong> Grafana + Beszel — контроль всех сервисов',
+        'proj2.r5': '🧪 <strong>Платформа для изучения AI</strong> — тестирую новые технологии до внедрения на работе',
+        'proj2.stack1': '<strong>🖥️ Сервер:</strong> Ollama, Kokoro, Open WebUI, Open Terminal, Grafana, Beszel, Portainer',
+        'proj2.stack2': '<strong>📚 Продуктивность:</strong> Docmost, Meilisearch, NocoDB/PostgreSQL, Blinko, Memos, SearXNG, Bookstack',
+        'proj2.stack3': '<strong>🛠️ Разработка:</strong> OpenProject, PlantUML, CloudBeaver, Draw.io, Excalidraw, n8n',
 
         'add.title': 'Дополнительная информация',
         'add.li1': 'Стажировка в <strong>РОСКОСМОСЕ</strong> (2014, 2015) — помощник экономиста',
@@ -150,7 +145,7 @@ const TRANSLATIONS = {
         'contacts.email': 'Email',
         'contacts.phone': 'Телефон',
 
-        'footer.text': '© {year} Орловский Олег. ИТ-менеджер.',
+        'footer.text': '© {year} Орловский Олег. ИТ-лидер команды разработки.',
         'download.btn': 'Скачать резюме',
 
         'ui.theme.light': 'Переключить тему',
@@ -159,12 +154,12 @@ const TRANSLATIONS = {
     },
 
     en: {
+        'meta.title': 'Oleg Orlovsky — IT Team Lead',
         'nav.about': 'About',
         'nav.experience': 'Experience',
         'nav.education': 'Education',
         'nav.skills': 'Skills',
         'nav.projects': 'Projects',
-        'nav.infra': 'Infrastructure',
         'nav.contacts': 'Contacts',
 
         'hero.greeting': "Hi, I'm",
@@ -174,7 +169,7 @@ const TRANSLATIONS = {
         'contact.location': 'Moscow, Russia',
 
         'about.title': 'About me',
-        'about.p1': 'IT manager with 8+ years of overall experience, 4 of them in IT. I specialize in leading development teams, running projects (new systems and services), system analysis, import substitution, and rolling out AI tools.',
+        'about.p1': 'IT team lead with 8+ years of overall experience, 4 of them in IT. I specialize in leading development teams, running projects (new systems and services), system analysis, import substitution, and rolling out AI tools.',
         'about.p2': 'Current projects — launching new HR services for VTB Bank and migrating existing ones to a domestic stack (PostgreSQL, Astra Linux, Kubernetes). I manage a team of 16+: architects, system analysts, developers, QA, and DevOps. Introduced a release policy, mentor new specialists, and run the projects end-to-end.',
         'about.p3': 'I explore innovative technologies (testing them on my own 5-server home lab) and IT-adjacent scientific breakthroughs. I read, debug and refine code written by others — WEB-dev (HTML/CSS/REACT), Python, JavaScript. I use Python and JavaScript to automate my workflows: LLM API integration scripts, data processing for AI pipelines. Hands-on experience writing code for AI-tool MVPs.',
         'about.p4': "Defended a master's thesis on «Socio-economic consequences of the Digital economy development»; recommended for postgraduate studies.",
@@ -197,7 +192,7 @@ const TRANSLATIONS = {
         'exp1.li3': 'Managing a 16+ person team: architects (2), SAs (4), developers (4), QA (3), DevOps (2), scrum master + contractors',
         'exp1.li4': 'Sprint and super-sprint planning (including cross-team work), backlog grooming, escalations',
         'exp1.li5': 'Mentoring every new hire on the team',
-        'exp1.li6': 'compliance with Federal Law 152-FZ and internal regulations',
+        'exp1.li6': 'Compliance with Federal Law 152-FZ and internal regulations',
         'exp1.achTitle': '<strong>Achievements:</strong>',
         'exp1.ach1': 'Scale-up & import substitution: brought ~65 HR services to the internal portal (9 — into the mobile app), up to 10k users/day. Moved from FIORI/OData to REST/Kafka, migrated to Astra Linux, grew the microservice architecture. Cut manual tickets and prepped the platform for AI adoption',
         'exp1.ach2': 'Complex integrations: delivered 5 HR services connected to 9 internal systems, automated HR processes, increased employee self-service share',
@@ -272,31 +267,26 @@ const TRANSLATIONS = {
         'skill.lang.en': 'English — C1 (Advanced)',
         'skill.lang.fr': 'Français — A2',
 
-        'infra.title': 'Infrastructure',
-        'infra.cat1': '🖥️ Server (Docker)',
-        'infra.cat1.li1': '<strong>Ollama</strong> — local LLMs/VLMs',
-        'infra.cat1.li2': '<strong>Kokoro</strong> — text-to-speech (TTS)',
-        'infra.cat1.li3': '<strong>Open WebUI</strong> + <strong>Open Terminal</strong>',
-        'infra.cat1.li4': '<strong>Grafana</strong> + <strong>Beszel</strong> — monitoring',
-        'infra.cat1.li5': '<strong>Portainer</strong> — Docker management',
-        'infra.cat2': '📚 Productivity',
-        'infra.cat2.li1': '<strong>Docmost</strong> + Meilisearch — wiki & search',
-        'infra.cat2.li2': '<strong>NocoDB/PostgreSQL</strong> — databases',
-        'infra.cat2.li3': '<strong>Blinko</strong> — bookmarks',
-        'infra.cat2.li4': '<strong>Docmost</strong> — notes',
-        'infra.cat2.li5': '<strong>Memos</strong> — notes',
-        'infra.cat2.li6': '<strong>SearXNG</strong> — meta-search',
-        'infra.cat2.li7': '<strong>Bookstack</strong> — documentation',
-        'infra.cat3': '🛠️ Development',
-        'infra.cat3.li1': '<strong>OpenProject</strong> + <strong>PlantUML</strong>',
-        'infra.cat3.li2': '<strong>CloudBeaver</strong> — DB via web',
-        'infra.cat3.li3': '<strong>Draw.io</strong> + <strong>Excalidraw</strong> — visual design',
-        'infra.cat3.li4': '<strong>n8n</strong> — workflow automation',
-
-        'projects.title': 'Projects (GitHub)',
+        'projects.title': 'Projects',
         'proj.link': 'Open repository →',
         'proj1.name': 'LLM Second Brain',
-        'proj1.desc': 'Self-hosted MCP server for long-term memory: stores, summarizes and searches notes via vectorization (Ollama).',
+        'proj1.desc': 'Self-hosted MCP server «second brain» for LLMs: gives models (Open WebUI and others) a shared note bank with hybrid search — vector and full-text. Knowledge lives apart from chat history; the model gets only what is relevant.',
+        'proj1.r1': '🧠 <strong>Shared knowledge bank</strong> for LLMs — models search, read, write and update notes via MCP',
+        'proj1.r2': '🔍 <strong>Hybrid search</strong> — vector (sqlite-vec) + full-text (FTS5), merged via RRF',
+        'proj1.r3': '💰 <strong>Token savings</strong> — returns short summaries, not full texts',
+        'proj1.r4': '🛡️ <strong>Self-hosted</strong> — single Docker container, non-root, data stays in the perimeter',
+        'proj1.r5': '🧩 <strong>6 tools</strong> memory_*: search, list, get, save, update, delete',
+        'proj1.stack': '<strong>Stack:</strong> Python 3.12, FastAPI, SQLite + sqlite-vec + FTS5, Ollama (embedding/summarization), MCP Streamable HTTP, Docker',
+        'proj2.name': 'Home homelab — self-hosted AI infrastructure',
+        'proj2.desc': 'Built and maintain my own homelab of 5 servers — a self-hosted AI infrastructure for learning and testing technologies: local LLMs, automation, monitoring and productivity. Everything runs in Docker, data stays in the perimeter.',
+        'proj2.r1': '🖥️ <strong>5 servers</strong>, all in Docker, single management point (Portainer)',
+        'proj2.r2': '🤖 <strong>Local LLMs</strong> (Ollama/vLLM) — data stays in the perimeter, privacy',
+        'proj2.r3': '⚙️ <strong>Automation</strong> — of routine and repetitive processes via n8n, Open WebUI automations and custom scripts',
+        'proj2.r4': '📊 <strong>Monitoring</strong> Grafana + Beszel — control over all services',
+        'proj2.r5': '🧪 <strong>AI learning platform</strong> — test new tech before rolling out at work',
+        'proj2.stack1': '<strong>🖥️ Server:</strong> Ollama, Kokoro, Open WebUI, Open Terminal, Grafana, Beszel, Portainer',
+        'proj2.stack2': '<strong>📚 Productivity:</strong> Docmost, Meilisearch, NocoDB/PostgreSQL, Blinko, Memos, SearXNG, Bookstack',
+        'proj2.stack3': '<strong>🛠️ Development:</strong> OpenProject, PlantUML, CloudBeaver, Draw.io, Excalidraw, n8n',
 
         'add.title': 'Additional information',
         'add.li1': 'Internship at <strong>ROSCOSMOS</strong> (2014, 2015) — economist assistant',
@@ -308,7 +298,7 @@ const TRANSLATIONS = {
         'contacts.email': 'Email',
         'contacts.phone': 'Phone',
 
-        'footer.text': '© {year} Oleg Orlovsky. IT manager.',
+        'footer.text': '© {year} Oleg Orlovsky. IT team lead.',
         'download.btn': 'Download CV',
 
         'ui.theme.light': 'Toggle theme',
@@ -321,15 +311,19 @@ const TRANSLATIONS = {
 const HTML_KEYS = new Set([
     'exp1.achTitle', 'exp1.stackTitle', 'exp2.achTitle', 'exp3.achTitle',
     'add.li1',
-    'infra.cat1.li1', 'infra.cat1.li2', 'infra.cat1.li3', 'infra.cat1.li4', 'infra.cat1.li5',
-    'infra.cat2.li1', 'infra.cat2.li2', 'infra.cat2.li3', 'infra.cat2.li4', 'infra.cat2.li5', 'infra.cat2.li6', 'infra.cat2.li7',
-    'infra.cat3.li1', 'infra.cat3.li2', 'infra.cat3.li3', 'infra.cat3.li4'
+    'proj2.r1', 'proj2.r2', 'proj2.r3', 'proj2.r4', 'proj2.r5',
+    'proj2.stack1', 'proj2.stack2', 'proj2.stack3',
+    'proj1.r1', 'proj1.r2', 'proj1.r3', 'proj1.r4', 'proj1.r5', 'proj1.stack'
 ]);
 
 // ===== Применение языка =====
 function applyLang(lang) {
     const dict = TRANSLATIONS[lang] || TRANSLATIONS.ru;
     document.documentElement.setAttribute('lang', lang);
+
+    // Переводим заголовок вкладки
+    const title = dict['meta.title'];
+    if (title) document.title = title;
 
     document.querySelectorAll('[data-i18n]').forEach(el => {
         const key = el.getAttribute('data-i18n');
@@ -408,14 +402,16 @@ const navLinks = document.querySelector('.nav-links');
 
 if (burger && navLinks) {
     burger.addEventListener('click', () => {
-        navLinks.classList.toggle('active');
+        const isOpen = navLinks.classList.toggle('active');
         burger.classList.toggle('active');
+        burger.setAttribute('aria-expanded', isOpen);
     });
 
     navLinks.querySelectorAll('a').forEach(link => {
         link.addEventListener('click', () => {
             navLinks.classList.remove('active');
             burger.classList.remove('active');
+            burger.setAttribute('aria-expanded', 'false');
         });
     });
 }
@@ -456,6 +452,12 @@ window.addEventListener('scroll', () => {
         }
     });
 });
+
+// ===== Кнопка печати / сохранения в PDF =====
+const printBtn = document.getElementById('print-btn');
+if (printBtn) {
+    printBtn.addEventListener('click', () => window.print());
+}
 
 // ===== Инициализация =====
 initLang();

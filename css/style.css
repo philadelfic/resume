@@ -103,6 +103,13 @@ a:hover {
     text-decoration: underline;
 }
 
+/* ===== Доступность: видимый фокус === */
+:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
 /* ===== Навигация === */
 .navbar {
     position: fixed;
@@ -780,6 +787,50 @@ a:hover {
     text-decoration: underline;
 }
 
+/* Широкая карточка проекта (домашняя инфраструктура) */
+.project-card--wide {
+    grid-column: 1 / -1;
+}
+
+.project-card--wide .proj-stack {
+    margin: 4px 0 0;
+}
+
+.proj-stack ul {
+    list-style: none;
+}
+
+.proj-stack li {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.proj-stack strong {
+    color: var(--text-primary);
+}
+
+/* Результаты проекта */
+.proj-results {
+    margin: 4px 0 12px;
+}
+
+.proj-results ul {
+    list-style: none;
+}
+
+.proj-results li {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    margin-bottom: 8px;
+    line-height: 1.5;
+}
+
+.proj-results strong {
+    color: var(--text-primary);
+}
+
 /* ===== Плавающая кнопка скачивания === */
 .download-float {
     position: fixed;
@@ -791,6 +842,7 @@ a:hover {
     color: #fff;
     font-size: 15px;
     font-weight: 500;
+    font-family: inherit;
     white-space: nowrap;
     text-decoration: none;
     display: inline-flex;
@@ -906,5 +958,89 @@ a:hover {
 
     .contact-card {
         justify-content: center;
+    }
+}
+
+/* ===== Печать / сохранение в PDF === */
+@media print {
+    /* Скрываем интерактивные элементы */
+    .navbar,
+    .download-float,
+    .footer,
+    .burger,
+    .nav-controls {
+        display: none !important;
+    }
+
+    body {
+        background: #fff;
+        color: #000;
+    }
+
+    .hero {
+        min-height: auto;
+        padding-top: 0;
+    }
+
+    .section {
+        padding: 20px 0;
+    }
+
+    .section-title {
+        margin-bottom: 24px;
+    }
+
+    /* Показываем все элементы без анимаций */
+    .fade-in {
+        opacity: 1;
+        transform: none;
+    }
+
+    .container {
+        max-width: 100%;
+        padding: 0 12px;
+    }
+
+    a {
+        color: #000;
+        text-decoration: none;
+    }
+
+    .timeline-content,
+    .card,
+    .infra-category,
+    .project-card {
+        box-shadow: none;
+        border-color: #ccc;
+    }
+
+    /* Не разрывать карточки между страницами */
+    .timeline-item,
+    .card,
+    .project-card,
+    .infra-category {
+        break-inside: avoid;
+    }
+
+    .hero-photo img {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* ===== Доступность: отключение анимаций по запросу === */
+@media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .fade-in {
+        opacity: 1;
+        transform: none;
     }
 }

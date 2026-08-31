@@ -3,8 +3,27 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Сайт только по прямой ссылке: запрещаем индексацию -->
+    <meta name="robots" content="noindex, nofollow">
+    <meta name="description" content="Олег Орловский — ИТ-лидер команды разработки. Управление командами, импортозамещение, AI-инфраструктура, кадровые сервисы.">
+    <meta name="theme-color" content="#0969da">
+    <link rel="icon" type="image/svg+xml" href="img/favicon.svg">
+    <!-- Open Graph (для карточек в мессенджерах/соцсетях) -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Орловский Олег — ИТ-лидер команды разработки">
+    <meta property="og:description" content="ИТ-лидер команды разработки. Управление командами, импортозамещение, AI-инфраструктура, кадровые сервисы.">
+    <meta property="og:url" content="https://philadelfic.github.io/resume/">
+    <meta property="og:image" content="https://philadelfic.github.io/resume/img/photo.jpeg">
+    <meta property="og:locale" content="ru_RU">
+    <meta property="og:site_name" content="Орловский Олег">
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Орловский Олег — ИТ-лидер команды разработки">
+    <meta name="twitter:description" content="ИТ-лидер команды разработки. Управление командами, импортозамещение, AI-инфраструктура.">
+    <meta name="twitter:image" content="https://philadelfic.github.io/resume/img/photo.jpeg">
     <title>Орловский Олег — ИТ-лидер команды разработки</title>
-    <link rel="stylesheet" href="css/style.css?v=6">
+    <link rel="preload" as="image" href="img/photo.jpeg">
+    <link rel="stylesheet" href="css/style.min.css?v=7">
     <!-- Антифлэш: выставляем тему до рендера -->
     <script>
         (function () {
@@ -22,20 +41,19 @@
     <nav class="navbar">
         <div class="container nav-container">
             <a href="#" class="logo">О.О.</a>
-            <ul class="nav-links">
+            <ul class="nav-links" id="nav-menu">
                 <li><a href="#about" data-i18n="nav.about">Обо мне</a></li>
+                <li><a href="#projects" data-i18n="nav.projects">Проекты</a></li>
                 <li><a href="#experience" data-i18n="nav.experience">Опыт</a></li>
                 <li><a href="#education" data-i18n="nav.education">Образование</a></li>
                 <li><a href="#skills" data-i18n="nav.skills">Навыки</a></li>
-                <li><a href="#projects" data-i18n="nav.projects">Проекты</a></li>
-                <li><a href="#infra" data-i18n="nav.infra">Инфраструктура</a></li>
                 <li><a href="#contacts" class="nav-cta" data-i18n="nav.contacts">Контакты</a></li>
             </ul>
             <div class="nav-controls">
                 <button class="icon-btn" id="lang-toggle" aria-label="Сменить язык" title="Сменить язык">EN</button>
                 <button class="icon-btn" id="theme-toggle" aria-label="Переключить тему" title="Переключить тему">🌙</button>
             </div>
-            <button class="burger" aria-label="Меню">
+            <button class="burger" aria-label="Меню" aria-expanded="false" aria-controls="nav-menu">
                 <span></span>
                 <span></span>
                 <span></span>
@@ -80,33 +98,91 @@
         <div class="container">
             <h2 class="section-title fade-in" data-i18n="about.title">Обо мне</h2>
             <div class="about-content fade-in">
-    <p data-i18n="about.p1">ИТ-менеджер с общим опытом работы 8+ лет, из которых 4 года в IT. Специализируюсь на управлении командами разработки, ведении проектов (новых систем и сервисов), системном анализе, импортозамещении и внедрении AI-инструментов.</p>
-    <p data-i18n="about.p2">Текущие проекты — вывод новых кадровых сервисов банка ВТБ и перевод существующих на отечественный стек (PostgreSQL, Astra Linux, Kubernetes). Управляю командой из 16+ человек: архитекторы, системные аналитики, разработчики, тестировщики и DevOps. Внедрил релизную политику, менторю новых специалистов и веду проекты.</p>
-    <p data-i18n="about.p3">Изучаю инновационные технологии (и тестирую на собственной домашней инфраструктуре из 5 серверов) и научные открытия, смежные с ИТ. Разбираюсь в чужом коде: читаю, правлю неточности и дорабатываю — WEB-dev (HTML/CSS/REACT), Python, JavaScript. Использую Python и JavaScript для автоматизации личных рабочих процессов: скрипты интеграции с LLM API, обработка данных для AI-пайплайнов. Практический опыт написания кода для MVP AI-инструментов.</p>
-    <p data-i18n="about.p4">Защитил магистерскую диссертацию на тему «Социально-экономические последствия развития Цифровой экономики», рекомендован к аспирантуре.</p>
+                <p data-i18n="about.p1">ИТ-лидер команды разработки с общим опытом работы 8+ лет, из которых 4 года в IT. Специализируюсь на управлении командами разработки, ведении проектов (новых систем и сервисов), системном анализе, импортозамещении и внедрении AI-инструментов.</p>
+                <p data-i18n="about.p2">Текущие проекты — вывод новых кадровых сервисов банка ВТБ и перевод существующих на отечественный стек (PostgreSQL, Astra Linux, Kubernetes). Управляю командой из 16+ человек: архитекторы, системные аналитики, разработчики, тестировщики и DevOps. Внедрил релизную политику, менторю новых специалистов и веду проекты.</p>
+                <p data-i18n="about.p3">Изучаю инновационные технологии (и тестирую на собственной домашней инфраструктуре из 5 серверов) и научные открытия, смежные с ИТ. Разбираюсь в чужом коде: читаю, правлю неточности и дорабатываю — WEB-dev (HTML/CSS/REACT), Python, JavaScript. Использую Python и JavaScript для автоматизации личных рабочих процессов: скрипты интеграции с LLM API, обработка данных для AI-пайплайнов. Практический опыт написания кода для MVP AI-инструментов.</p>
+                <p data-i18n="about.p4">Защитил магистерскую диссертацию на тему «Социально-экономические последствия развития Цифровой экономики», рекомендован к аспирантуре.</p>
+                <div class="about-stats">
+                    <div class="stat">
+                        <span class="stat-number">8+</span>
+                        <span class="stat-label" data-i18n="stat.label1">лет общего опыта</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">4</span>
+                        <span class="stat-label" data-i18n="stat.label2">года в ИТ</span>
+                    </div>
+                    <div class="stat">
+                        <span class="stat-number">16+</span>
+                        <span class="stat-label" data-i18n="stat.label3">человек в команде</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Ключевые результаты -->
+    <section class="results section" id="results">
+        <div class="container">
             <h2 class="section-title fade-in" data-i18n="about.resultsTitle">Ключевые результаты</h2>
+            <div class="about-content fade-in">
                 <p data-i18n="about.r1">Банковские Кадровые сервисы: 65 сервисов → портал для 70 тыс. пользователей/мес., снижение обращений в HR в 8 раз</p>
                 <p data-i18n="about.r2">Импортозамещение: FIORI/OData → REST/Kafka + Astra Linux, переход в микросервисы</p>
                 <p data-i18n="about.r3">AI-инфраструктура: Локальные LLM (Ollama/VLLM), MCP, RAG — команда из 16 человек работает с AI ежедневно</p>
                 <p data-i18n="about.r4">Автоматизация: n8n: множество интеграций, экономия ~12 часов в неделю на рутине, автономия сотрудников по реализации автоматизаций под себя</p>
+            </div>
+        </div>
+    </section>
 
-    <div class="about-stats">
-        <div class="stat">
-            <span class="stat-number">8+</span>
-            <span class="stat-label" data-i18n="stat.label1">лет общего опыта</span>
+    <!-- Проекты -->
+    <section class="projects section" id="projects">
+        <div class="container">
+            <h2 class="section-title fade-in" data-i18n="projects.title">Проекты</h2>
+            <div class="projects-grid">
+
+                <div class="project-card project-card--wide fade-in">
+                    <h3 data-i18n="proj1.name">LLM Second Brain</h3>
+                    <p data-i18n="proj1.desc">Self-hosted MCP-сервер «второго мозга» для LLM: даёт моделям (Open WebUI и др.) общий банк заметок с гибридным поиском — векторным и полнотекстовым. Знания живут отдельно от истории чатов, модель получает только релевантное.</p>
+                    <div class="proj-results">
+                        <ul>
+                            <li data-i18n="proj1.r1">🧠 <strong>Общий банк знаний</strong> для LLM — модели ищут, читают, пишут и обновляют заметки через MCP</li>
+                            <li data-i18n="proj1.r2">🔍 <strong>Гибридный поиск</strong> — векторный (sqlite-vec) + полнотекстовый (FTS5), слияние через RRF</li>
+                            <li data-i18n="proj1.r3">💰 <strong>Экономия токенов</strong> — выдача кратких содержаний, а не целых текстов</li>
+                            <li data-i18n="proj1.r4">🛡️ <strong>Self-hosted</strong> — один Docker-контейнер, non-root, данные не покидают контур</li>
+                            <li data-i18n="proj1.r5">🧩 <strong>6 инструментов</strong> memory_*: search, list, get, save, update, delete</li>
+                        </ul>
+                    </div>
+                    <div class="proj-stack">
+                        <ul>
+                            <li data-i18n="proj1.stack"><strong>Стек:</strong> Python 3.12, FastAPI, SQLite + sqlite-vec + FTS5, Ollama (векторизация/суммаризация), MCP Streamable HTTP, Docker</li>
+                        </ul>
+                    </div>
+                    <a href="https://github.com/philadelfic/LLM-second-brain" target="_blank" rel="noopener" data-i18n="proj.link">Открыть репозиторий →</a>
+                </div>
+
+                <div class="project-card project-card--wide fade-in">
+                    <h3 data-i18n="proj2.name">Домашний homelab — self-hosted AI-инфраструктура</h3>
+                    <p data-i18n="proj2.desc">Собрал и поддерживаю собственный homelab из 5 серверов — self-hosted AI-инфраструктуру для изучения и тестирования технологий: локальные LLM, автоматизация, мониторинг и продуктивность. Всё работает в Docker, данные не покидают контур.</p>
+                    <div class="proj-results">
+                        <ul>
+                            <li data-i18n="proj2.r1">🖥️ <strong>5 серверов</strong>, всё в Docker, единая точка управления (Portainer)</li>
+                            <li data-i18n="proj2.r2">🤖 <strong>Локальные LLM</strong> (Ollama/vLLM) — данные не покидают контур, приватность</li>
+                            <li data-i18n="proj2.r3">⚙️ <strong>Автоматизация</strong> — рядовых и рутинных процессов с помощью N8N, автоматизаций Open WebUI и собственными скриптами</li>
+                            <li data-i18n="proj2.r4">📊 <strong>Мониторинг</strong> Grafana + Beszel — контроль всех сервисов</li>
+                            <li data-i18n="proj2.r5">🧪 <strong>Платформа для изучения AI</strong> — тестирую новые технологии до внедрения на работе</li>
+                        </ul>
+                    </div>
+                    <div class="proj-stack">
+                        <ul>
+                            <li data-i18n="proj2.stack1"><strong>🖥️ Сервер:</strong> Ollama, Kokoro, Open WebUI, Open Terminal, Grafana, Beszel, Portainer</li>
+                            <li data-i18n="proj2.stack2"><strong>📚 Продуктивность:</strong> Docmost, Meilisearch, NocoDB/PostgreSQL, Blinko, Memos, SearXNG, Bookstack</li>
+                            <li data-i18n="proj2.stack3"><strong>🛠️ Разработка:</strong> OpenProject, PlantUML, CloudBeaver, Draw.io, Excalidraw, n8n</li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
         </div>
-        <div class="stat">
-            <span class="stat-number">4</span>
-            <span class="stat-label" data-i18n="stat.label2">года в ИТ</span>
-        </div>
-        <div class="stat">
-            <span class="stat-number">16+</span>
-            <span class="stat-label" data-i18n="stat.label3">человек в команде</span>
-        </div>
-    </div>
-</div>
-        </div>
-        </section>
+    </section>
 
     <!-- Опыт работы -->
     <section class="experience section" id="experience">
@@ -130,7 +206,7 @@
                             <li data-i18n="exp1.li3">Управление командой из 16+ человек: архитекторы (2), СА (4), разработчики (4), тестировщики (3), DevOps (2), scrum-мастер + подрядчики</li>
                             <li data-i18n="exp1.li4">Планирование спринтов и суперспринтов (включая работы со смежными командами), корректировка бэклога, эскалации</li>
                             <li data-i18n="exp1.li5">Менторство всех новых сотрудников в команде</li>
-                            <li data-i18n="exp1.li6">соблюдение 152 ФЗ и внутренних нормативных актов</li>
+                            <li data-i18n="exp1.li6">Соблюдение 152 ФЗ и внутренних нормативных актов</li>
                         </ul>
                         <div class="achievements">
                             <p data-i18n="exp1.achTitle"><strong>Достижения:</strong></p>
@@ -348,66 +424,6 @@
         </div>
     </section>
 
-    <!-- Проекты -->
-    <section class="projects section" id="projects">
-        <div class="container">
-            <h2 class="section-title fade-in" data-i18n="projects.title">Проекты (GitHub)</h2>
-            <div class="projects-grid">
-
-                <div class="project-card fade-in">
-                    <h3 data-i18n="proj1.name">LLM Second Brain</h3>
-                    <p data-i18n="proj1.desc">Self-hosted MCP-сервер долговременной памяти для LLM: хранит, суммаризирует и ищет заметки через векторизацию (Ollama).</p>
-                    <a href="https://github.com/philadelfic/LLM-second-brain" target="_blank" rel="noopener" data-i18n="proj.link">Открыть репозиторий →</a>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
-    <!-- Инфраструктура -->
-    <section class="infra section" id="infra">
-        <div class="container">
-            <h2 class="section-title fade-in" data-i18n="infra.title">Инфраструктура</h2>
-            <div class="infra-grid">
-
-                <div class="infra-category fade-in">
-                    <h3 data-i18n="infra.cat1">🖥️ Сервер (Docker)</h3>
-                    <ul>
-                        <li data-i18n="infra.cat1.li1"><strong>Ollama</strong> — локальные LLM/VLM</li>
-                        <li data-i18n="infra.cat1.li2"><strong>Kokoro</strong> — текст-в-речь (TTS)</li>
-                        <li data-i18n="infra.cat1.li3"><strong>Open WebUI</strong> + <strong>Open Terminal</strong></li>
-                        <li data-i18n="infra.cat1.li4"><strong>Grafana</strong> + <strong>Beszel</strong> — мониторинг</li>
-                        <li data-i18n="infra.cat1.li5"><strong>Portainer</strong> — управление Docker</li>
-                    </ul>
-                </div>
-
-                <div class="infra-category fade-in">
-                    <h3 data-i18n="infra.cat2">📚 Продуктивность</h3>
-                    <ul>
-                        <li data-i18n="infra.cat2.li1"><strong>Docmost</strong> + Meilisearch — wiki и поиск</li>
-                        <li data-i18n="infra.cat2.li2"><strong>NocoDB/PostgreSQL</strong> — базы данных</li>
-                        <li data-i18n="infra.cat2.li3"><strong>Blinko</strong> — закладки</li>
-                        <li data-i18n="infra.cat2.li4"><strong>Docmost</strong> — заметки</li>
-                        <li data-i18n="infra.cat2.li5"><strong>Memos</strong> — заметки</li>
-                        <li data-i18n="infra.cat2.li6"><strong>SearXNG</strong> — метапоисковик</li>
-                        <li data-i18n="infra.cat2.li7"><strong>Bookstack</strong> — документация</li>
-                    </ul>
-                </div>
-
-                <div class="infra-category fade-in">
-                    <h3 data-i18n="infra.cat3">🛠️ Разработка</h3>
-                    <ul>
-                        <li data-i18n="infra.cat3.li1"><strong>OpenProject</strong> + <strong>PlantUML</strong></li>
-                        <li data-i18n="infra.cat3.li2"><strong>CloudBeaver</strong> — СУБД через веб</li>
-                        <li data-i18n="infra.cat3.li3"><strong>Draw.io</strong> + <strong>Excalidraw</strong> — визуальное проектирование</li>
-                        <li data-i18n="infra.cat3.li4"><strong>n8n</strong> — автоматизация workflow</li>
-                    </ul>
-                </div>
-
-            </div>
-        </div>
-    </section>
-
     <!-- Дополнительная информация -->
     <section class="additional section" id="additional">
         <div class="container">
@@ -447,15 +463,16 @@
     <!-- Footer -->
     <footer class="footer">
         <div class="container footer-content">
-            <p data-i18n="footer.text">&copy; 2026 Орловский Олег. ИТ-менеджер.</p>
+            <p data-i18n="footer.text">&copy; 2026 Орловский Олег. ИТ-лидер команды разработки.</p>
         </div>
     </footer>
 
-    <!-- Плавающая кнопка скачивания PDF -->
-    <a href="applications/%D0%9E%D1%80%D0%BB%D0%BE%D0%B2%D1%81%D0%BA%D0%B8%D0%B9%20%D1%80%D0%B5%D0%B7%D1%8E%D0%BC%D0%B5%20%D0%B0%D0%B2%D0%B3%D1%83%D1%81%D1%82%202026.pdf" download="Орловский_резюме.pdf" class="download-float" title="Скачать резюме (PDF)" data-i18n="download.btn">
-    Скачать резюме
-</a>
+    <!-- Плавающая кнопка печати / сохранения в PDF -->
+    <button class="download-float" id="print-btn" type="button" title="Распечатать или сохранить в PDF">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+        <span data-i18n="download.btn">Скачать резюме</span>
+    </button>
 
-    <script src="js/main.js"></script>
+    <script src="js/main.min.js"></script>
 </body>
 </html>
