@@ -4,10 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Орловский Олег — ИТ-лидер команды разработки</title>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css?v=6">
     <!-- Антифлэш: выставляем тему до рендера -->
     <script>
         (function () {
@@ -29,7 +26,6 @@
                 <li><a href="#about" data-i18n="nav.about">Обо мне</a></li>
                 <li><a href="#experience" data-i18n="nav.experience">Опыт</a></li>
                 <li><a href="#education" data-i18n="nav.education">Образование</a></li>
-                <li><a href="#courses" data-i18n="nav.courses">Курсы</a></li>
                 <li><a href="#skills" data-i18n="nav.skills">Навыки</a></li>
                 <li><a href="#projects" data-i18n="nav.projects">Проекты</a></li>
                 <li><a href="#infra" data-i18n="nav.infra">Инфраструктура</a></li>
@@ -226,49 +222,50 @@
     <section class="education section" id="education">
         <div class="container">
             <h2 class="section-title fade-in" data-i18n="edu.title">Образование</h2>
-            <div class="cards-grid">
-                <div class="card fade-in">
-                    <div class="card-icon">🎓</div>
-                    <h3 data-i18n="edu.card1.title">Магистр — Международные отношения, Мировая экономика и управление</h3>
-                    <p class="card-subtitle" data-i18n="edu.card1.subtitle">2018 / 2016</p>
-                    <p class="card-body" data-i18n="edu.card1.body">Московский государственный университет им. М.В. Ломоносова (МГУ)</p>
-                </div>
-            </div>
-        </div>
-    </section>
+            <div class="edu-split">
 
-    <!-- Курсы и повышение квалификации -->
-    <section class="courses section" id="courses">
-        <div class="container">
-            <h2 class="section-title fade-in" data-i18n="courses.title">Курсы и повышение квалификации</h2>
-            <div class="cards-grid">
-
-                <div class="card fade-in">
-                    <div class="card-icon">📜</div>
-                    <h3 data-i18n="c1.title">Инновационные технологии адаптивной ФК</h3>
-                    <p class="card-subtitle" data-i18n="c1.subtitle">2021</p>
-                    <p class="card-body" data-i18n="c1.body">ГАОУ ВО МГУСиТ</p>
+                <!-- Левая колонка: Основное образование -->
+                <div class="edu-col edu-col-main fade-in">
+                    <h3 class="edu-col-title" data-i18n="edu.main.title">Основное образование</h3>
+                    <div class="edu-cards">
+                        <div class="card">
+                            <div class="card-icon">🎓</div>
+                            <h3 data-i18n="edu.card1.title">Магистр — Международные отношения, Мировая экономика и управление</h3>
+                            <p class="card-subtitle" data-i18n="edu.card1.subtitle">2018 / 2016</p>
+                            <p class="card-body" data-i18n="edu.card1.body">Московский государственный университет им. М.В. Ломоносова (МГУ)</p>
+                        </div>
+                    </div>
                 </div>
 
-                <div class="card fade-in">
-                    <div class="card-icon">📜</div>
-                    <h3 data-i18n="c2.title">Федеральные стандарты бухгалтерского учёта</h3>
-                    <p class="card-subtitle" data-i18n="c2.subtitle">2019</p>
-                    <p class="card-body" data-i18n="c2.body">ООО "Финансовый приоритет"</p>
-                </div>
-
-                <div class="card fade-in">
-                    <div class="card-icon">📜</div>
-                    <h3 data-i18n="c3.title">Ведомственный контроль финансово-хозяйственной деятельности</h3>
-                    <p class="card-subtitle" data-i18n="c3.subtitle">2019</p>
-                    <p class="card-body" data-i18n="c3.body">МГУУ Правительства Москвы</p>
-                </div>
-
-                <div class="card fade-in">
-                    <div class="card-icon">📜</div>
-                    <h3 data-i18n="c4.title">Диалог и партнерство Цивилизаций</h3>
-                    <p class="card-subtitle" data-i18n="c4.subtitle">2016</p>
-                    <p class="card-body" data-i18n="c4.body">Международный институт Питирима Сорокина</p>
+                <!-- Правая колонка: Дополнительное образование -->
+                <div class="edu-col edu-col-additional fade-in">
+                    <h3 class="edu-col-title" data-i18n="edu.additional.title">Дополнительное образование</h3>
+                    <div class="edu-cards">
+                        <div class="card">
+                            <div class="card-icon">📜</div>
+                            <h3 data-i18n="c1.title">Инновационные технологии адаптивной ФК</h3>
+                            <p class="card-subtitle" data-i18n="c1.subtitle">2021</p>
+                            <p class="card-body" data-i18n="c1.body">ГАОУ ВО МГУСиТ</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">📜</div>
+                            <h3 data-i18n="c2.title">Федеральные стандарты бухгалтерского учёта</h3>
+                            <p class="card-subtitle" data-i18n="c2.subtitle">2019</p>
+                            <p class="card-body" data-i18n="c2.body">ООО "Финансовый приоритет"</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">📜</div>
+                            <h3 data-i18n="c3.title">Ведомственный контроль финансово-хозяйственной деятельности</h3>
+                            <p class="card-subtitle" data-i18n="c3.subtitle">2019</p>
+                            <p class="card-body" data-i18n="c3.body">МГУУ Правительства Москвы</p>
+                        </div>
+                        <div class="card">
+                            <div class="card-icon">📜</div>
+                            <h3 data-i18n="c4.title">Диалог и партнерство Цивилизаций</h3>
+                            <p class="card-subtitle" data-i18n="c4.subtitle">2016</p>
+                            <p class="card-body" data-i18n="c4.body">Международный институт Питирима Сорокина</p>
+                        </div>
+                    </div>
                 </div>
 
             </div>
