@@ -10,7 +10,7 @@ const TRANSLATIONS = {
         'nav.contacts': 'Контакты',
 
         'hero.greeting': 'Привет, я',
-        'hero.title': 'Менеджер проектов по внедрению AI-инструментов',
+        'hero.title': 'ИТ-лидер команды разработки',
 
         'contact.telegram': 'Telegram',
         'contact.location': 'Москва, Россия',
@@ -162,7 +162,7 @@ const TRANSLATIONS = {
         'nav.contacts': 'Contacts',
 
         'hero.greeting': "Hi, I'm",
-        'hero.title': 'Project Manager for AI Tooling Implementation',
+        'hero.title': 'IT Team Lead',
 
         'contact.telegram': 'Telegram',
         'contact.location': 'Moscow, Russia',
