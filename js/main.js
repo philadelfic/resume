@@ -6,6 +6,7 @@ const TRANSLATIONS = {
         'nav.education': 'Образование',
         'nav.courses': 'Курсы',
         'nav.skills': 'Навыки',
+        'nav.projects': 'Проекты',
         'nav.infra': 'Инфраструктура',
         'nav.contacts': 'Контакты',
 
@@ -134,6 +135,15 @@ const TRANSLATIONS = {
         'infra.cat3.li3': '<strong>Draw.io</strong> + <strong>Excalidraw</strong> — визуальное проектирование',
         'infra.cat3.li4': '<strong>n8n</strong> — автоматизация workflow',
 
+        'projects.title': 'Проекты (GitHub)',
+        'proj.link': 'Открыть репозиторий →',
+        'proj1.name': 'LLM Second Brain',
+        'proj1.desc': 'Self-hosted MCP-сервер долговременной памяти для LLM: хранит, суммаризирует и ищет заметки через векторизацию (Ollama).',
+        'proj2.name': 'WebDev Portfolio',
+        'proj2.desc': 'Портфолио веб-разработчика: HTML/CSS/JavaScript проекты.',
+        'proj3.name': 'Resume',
+        'proj3.desc': 'Этот сайт-резюме, размещённый на GitHub Pages.',
+
         'add.title': 'Дополнительная информация',
         'add.li1': 'Стажировка в <strong>РОСКОСМОСЕ</strong> (2014, 2015) — помощник экономиста',
         'add.li2': 'Кружок математического моделирования в университете',
@@ -158,6 +168,7 @@ const TRANSLATIONS = {
         'nav.education': 'Education',
         'nav.courses': 'Courses',
         'nav.skills': 'Skills',
+        'nav.projects': 'Projects',
         'nav.infra': 'Infrastructure',
         'nav.contacts': 'Contacts',
 
@@ -285,6 +296,15 @@ const TRANSLATIONS = {
         'infra.cat3.li2': '<strong>CloudBeaver</strong> — DB via web',
         'infra.cat3.li3': '<strong>Draw.io</strong> + <strong>Excalidraw</strong> — visual design',
         'infra.cat3.li4': '<strong>n8n</strong> — workflow automation',
+
+        'projects.title': 'Projects (GitHub)',
+        'proj.link': 'Open repository →',
+        'proj1.name': 'LLM Second Brain',
+        'proj1.desc': 'Self-hosted MCP server for long-term memory: stores, summarizes and searches notes via vectorization (Ollama).',
+        'proj2.name': 'WebDev Portfolio',
+        'proj2.desc': 'Web developer portfolio: HTML/CSS/JavaScript projects.',
+        'proj3.name': 'Resume',
+        'proj3.desc': 'This resume website, hosted on GitHub Pages.',
 
         'add.title': 'Additional information',
         'add.li1': 'Internship at <strong>ROSCOSMOS</strong> (2014, 2015) — economist assistant',
